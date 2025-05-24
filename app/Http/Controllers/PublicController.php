@@ -8,7 +8,7 @@ class PublicController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return view('homepage');
     }
 
     public function aboutUs()
@@ -18,7 +18,7 @@ class PublicController extends Controller
             ['name'=> 'Gianni', 'surname'=> 'Bianchi', 'role'=> 'frontman'],
             ['name'=> 'Sandro', 'surname'=> 'Verdi', 'role'=> 'creativo'],
         ];
-        return view('about-us', ['users'=>$users]);
+        return view('aboutUs', ['users'=>$users]);
     }
 
     public function contatti()
