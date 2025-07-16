@@ -33,6 +33,6 @@ class PublicController extends Controller
             ['id'=> 2, 'name'=> 'Prodotto 2', 'description'=> 'Descrizione prodotto 2', 'price'=> 20.99],
             ['id'=> 3, 'name'=> 'Prodotto 3', 'description'=> 'Descrizione prodotto 3', 'price'=> 30.99],
         ];
-        return view('prodotti');
+        return view('prodotti', ['prodotti' => $prodotti]);
     }
 }
