@@ -11,8 +11,8 @@ Route::get('chi-siamo', [PublicController::class, 'aboutUs'])->name('about-us');
 
 Route::get('contatti', [PublicController::class, 'contatti'])->name('contatti');
 
-Route::get('/chi-siamo/detail/{name}', [AboutUsController::class, 'aboutUsDetail'])->name('aboutUsDetail');
+Route::get('/chi-siamo/detail/{name}', [AboutUsController::class, 'aboutUsDetail'])->name('about-us-detail');
 
 Route::get('/prodotti', [PublicController::class, 'prodotti'])->name('prodotti');
 
-Route::get('/prodotti/detail/{id}', [ProdottiController::class, 'prodottiDetail'])->name('prodottiDetail');
+Route::get('/prodotti/detail/{id}', [ProdottiController::class, 'prodottiDetail'])->name('prodotti-detail');
